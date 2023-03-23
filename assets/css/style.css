@@ -83,8 +83,6 @@ li {
 
 }
 
-
-
 .intro {
     width: 100%;
     display: flex;
@@ -139,7 +137,6 @@ li {
     transform: translateY(-5px) scale(103%);
     box-shadow: 0 0 50px var(--cor-principal), 3px 3px 2px var(--branco);
 }
-
 
 .services {
     display: flex;
@@ -207,6 +204,8 @@ li {
 .contract {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contract-grid {
@@ -228,7 +227,6 @@ li {
 
 }
 
-
 .contract-content h2::after {
     content: '';
     position: absolute;
@@ -244,6 +242,68 @@ li {
     width: 80%;
     text-indent: 2rem;
 }
+
+.contract-cards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.contract-cards h2 {
+    margin: 5rem 0 0;
+    color: var(--cor-principal);
+    position: relative;
+}
+
+.contract-cards p {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: linear-gradient(180deg, #003569 -118.45%, rgba(0, 53, 105, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 2rem;
+
+}
+
+.contract-cards .card {
+    background-color: var(--cor-principal);
+    color: var(--branco);
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+.contract-cards img {
+    filter: drop-shadow(0 0 10px var(--preto));
+}
+
+.contract-cards .card::after,
+.contract-cards .card::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 3rem;
+    background-color: var(--cor-principal);
+}
+
+.contract-cards .card::after {
+    left: 50px;
+    bottom: -30px;
+}
+
+.contract-cards .card::before {
+    right: 50px;
+    bottom: -30px;
+}
+
+.contract-cards .card:nth-child(6)::after,
+.contract-cards .card:nth-child(6)::before {
+    display: none;
+}
+
+
 
 /* @media (max-width:800px) {} */
 
