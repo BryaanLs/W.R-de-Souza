@@ -71,6 +71,9 @@ li {
 
 .bg-section3 {
     background: url(/assets/img/fundo-section3.png);
+    position: relative;
+    top: -140px;
+
 }
 
 .bg-intro,
@@ -90,12 +93,10 @@ li {
     padding: 1rem;
 }
 
-
 .intro-logo {
     display: flex;
     padding: 2rem 0;
 }
-
 
 .intro-logo img {
     margin-right: 2rem;
@@ -162,6 +163,7 @@ li {
     margin: 2.5rem 0;
     box-shadow: 0 0 10px var(--preto);
     transition: 300ms;
+    text-align: left;
 }
 
 .card:hover {
@@ -199,6 +201,7 @@ li {
     border-radius: 100px 0 100px 0;
     box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.25), inset 2px 0px 79px 20px rgba(0, 0, 0, 0.25);
     height: max-content;
+    z-index: 2;
 }
 
 .contract {
@@ -206,6 +209,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 4rem 0;
 }
 
 .contract-grid {
@@ -256,7 +260,7 @@ li {
     position: relative;
 }
 
-.contract-cards p {
+.shadow-text {
     font-size: 3rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -265,7 +269,6 @@ li {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 2rem;
-
 }
 
 .contract-cards .card {
@@ -303,9 +306,84 @@ li {
     display: none;
 }
 
+.we-work {
+    padding-top: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.we-work h2 {
+    text-transform: uppercase;
+}
+
+.we-work .shadow-text {
+    background: linear-gradient(180deg, #ffffffb9 -28.24%, rgba(0, 53, 105, 0) 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 10rem;
+
+}
+
+.work-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7rem;
+    width: 100%;
+}
+
+.pic {
+    background: linear-gradient(180deg, #003569 50.52%, var(--cor-secundaria) 150%);
+    border-radius: 3rem;
+    padding: 0 3rem;
+    position: relative;
+    box-shadow: -10px 10px 6px var(--cor-principal), -11px 11px 100px var(--cor-secundaria);
+}
+
+.pic img {
+    border-radius: 3rem;
+    position: relative;
+    top: -35px;
+    box-shadow: 0 0 100px 1px var(--preto);
+}
+
+.work-card {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-weight: bold;
+    color: var(--preto);
+    text-transform: uppercase;
+    padding: 2rem 5rem 2rem 1rem;
+    background-color: var(--branco);
+    border-radius: 1rem;
+    box-shadow: 0 0 10px var(--preto);
+    margin-left: 5rem;
+    width: 40rem;
+    position: relative;
+
+}
+
+.work-card::after {
+    content: '';
+    position: absolute;
+    width: 5rem;
+    height: 5px;
+    background-color: var(--branco);
+    top: 50%;
+    left: -50px;
+}
+
+.work-card img {
+    margin-right: 2rem;
+}
 
 
-/* @media (max-width:800px) {} */
 
 ::-webkit-scrollbar {
     background-color: var(--branco);
