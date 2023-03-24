@@ -65,12 +65,12 @@ li {
 }
 
 .bg-section1 {
-    background: url(/assets/img/bg-section1.png);
+    background: url(/assets/img/bg-section1.webp);
     background-attachment: fixed;
 }
 
 .bg-section3 {
-    background: url(/assets/img/fundo-section3.png);
+    background: url(/assets/img/fundo-section3.webp);
     position: relative;
     top: -140px;
 
@@ -423,13 +423,13 @@ li {
     }
 
     .bg-section1 {
-        background: url(/assets/img/bg-section1-mobile.png);
+        background: url(/assets/img/bg-section1-mobile.webp);
         background-size: cover;
         background-position: top;
     }
 
     .bg-section3 {
-        background: url(/assets/img/bg-section3-mobile.png);
+        background: url(/assets/img/bg-section3-mobile.webp);
         background-size: cover;
         background-repeat: no-repeat;
     }
