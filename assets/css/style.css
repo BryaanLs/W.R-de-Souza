@@ -404,7 +404,7 @@ li {
 @media (max-width: 800px) {
     .bg-intro {
         background: url(/assets/img/bg-intro-mobile.webp);
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: left;
         background-repeat: no-repeat;
     }
