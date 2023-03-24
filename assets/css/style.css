@@ -17,6 +17,10 @@ html {
     background-color: var(--cor-principal);
 }
 
+body {
+    -webkit-overflow-x: hidden;
+    overflow-x: hidden;
+}
 
 h1,
 h2,
