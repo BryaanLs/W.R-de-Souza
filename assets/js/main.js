@@ -2,8 +2,7 @@ const target = document.querySelectorAll('[data-anime]');
 const workCard = document.querySelectorAll('.work-card')
 
 function animeScroll() {
-    const windowTop = window.innerHeight * 0.5;
-    const windowWidth = window.innerWidth;
+    const windowTop = window.innerHeight * 0.7;
 
     target.forEach((e) => {
         if (e.getBoundingClientRect().top - windowTop < 120) {
