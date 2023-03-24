@@ -344,18 +344,18 @@ li {
 }
 
 .pic {
-    background: linear-gradient(180deg, #003569 50.52%, var(--cor-secundaria) 150%);
+    background: linear-gradient(180deg, #0035699f 20%, var(--cor-secundaria) 150%);
     border-radius: 3rem;
     padding: 0 3rem;
     position: relative;
-    box-shadow: -10px 10px 6px var(--cor-principal), -11px 11px 100px var(--cor-secundaria);
+    box-shadow: -10px 10px 20px var(--cor-principal), -11px 11px 100px var(--cor-secundaria);
 }
 
 .pic img {
     border-radius: 3rem;
     position: relative;
     top: -35px;
-    box-shadow: 0 0 100px 1px var(--preto);
+    box-shadow: 0 0 2px var(--preto);
 }
 
 .work-card {
@@ -397,11 +397,27 @@ li {
     border-bottom: none;
 }
 
+.we-content h2 {
+    text-transform: uppercase;
+}
+
 @media (max-width: 800px) {
     .bg-intro {
         background: url(/assets/img/bg-intro-mobile.webp);
         background-size: 100% 100%;
         background-position: left;
+        background-repeat: no-repeat;
+    }
+
+    .bg-section1 {
+        background: url(/assets/img/bg-section1-mobile.png);
+        background-size: cover;
+        background-position: top;
+    }
+
+    .bg-section3 {
+        background: url(/assets/img/bg-section3-mobile.png);
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
@@ -484,6 +500,10 @@ li {
     .work-card::before {
         right: 80px;
         top: -30px;
+    }
+
+    .work-container {
+        margin-bottom: 10rem;
     }
 
 }
