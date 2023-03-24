@@ -175,7 +175,6 @@ li {
 }
 
 .call-to-ac {
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,7 +203,8 @@ li {
     z-index: 2;
 }
 
-.contract {
+.contract,
+.we {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,7 +212,8 @@ li {
     padding: 4rem 0;
 }
 
-.contract-grid {
+.contract-grid,
+.we-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
@@ -220,18 +221,21 @@ li {
     border-bottom: 2px solid var(--cor-principal);
 }
 
-.contract-content {
+.contract-content,
+.we-content {
     margin-top: 4rem;
 }
 
-.contract-content h2 {
+.contract-content h2,
+.we-content h2 {
     color: var(--cor-principal);
     position: relative;
     margin: 3rem 0;
 
 }
 
-.contract-content h2::after {
+.contract-content h2::after,
+.we-content h2::after {
     content: '';
     position: absolute;
     width: 80%;
@@ -242,7 +246,8 @@ li {
 
 }
 
-.contract-content p {
+.contract-content p,
+.we-content p {
     width: 80%;
     text-indent: 2rem;
 }
@@ -252,6 +257,7 @@ li {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+
 }
 
 .contract-cards h2 {
@@ -307,7 +313,7 @@ li {
 }
 
 .we-work {
-    padding-top: 12rem;
+    padding: 12rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -383,7 +389,104 @@ li {
     margin-right: 2rem;
 }
 
+#bg-white-last {
+    top: -220px;
+}
 
+.we-grid {
+    border-bottom: none;
+}
+
+@media (max-width: 800px) {
+    .bg-intro {
+        background: url(/assets/img/bg-intro-mobile.webp);
+        background-size: 100% 100%;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+
+    .intro {
+        align-items: start;
+    }
+
+    .intro-logo h1 {
+        font-size: 3.5rem;
+    }
+
+    .intro-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .intro-text p {
+        font-size: 1.2rem;
+    }
+
+    .services h2 {
+        font-size: 2.3rem;
+    }
+
+    .card {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .call-to-ac p {
+        width: 90%;
+    }
+
+    .contract-grid,
+    .we-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contract-content,
+    .we-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contract-cards {
+        align-items: center;
+    }
+
+    .contract-cards h2,
+    .shadow-text,
+    .we-work h2 {
+        font-size: 2.2rem;
+    }
+
+    .work-container {
+        flex-direction: column;
+
+    }
+
+    .work-card {
+        margin-left: 0;
+        margin-top: 3rem;
+        justify-content: center;
+    }
+
+    .work-card::after,
+    .work-card::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 3rem;
+        background-color: var(--branco);
+    }
+
+    .work-card::after {
+        left: 80px;
+        top: -30px;
+    }
+
+    .work-card::before {
+        right: 80px;
+        top: -30px;
+    }
+
+}
 
 ::-webkit-scrollbar {
     background-color: var(--branco);
