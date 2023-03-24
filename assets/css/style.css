@@ -90,9 +90,6 @@ li {
     background-size: cover;
     background-position: center center;
     color: var(--branco);
-    -webkit-overflow-x: hidden;
-    overflow-x: hidden;
-
 }
 
 .intro {
