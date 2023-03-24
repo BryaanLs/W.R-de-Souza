@@ -270,7 +270,7 @@ li {
     font-size: 3rem;
     text-transform: uppercase;
     font-weight: bold;
-    background: linear-gradient(180deg, #003569 -118.45%, rgba(0, 53, 105, 0) 100%);
+    background: linear-gradient(180deg, var(--cor-secundaria) -10%, rgba(0, 53, 105, 0) 115%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -326,13 +326,17 @@ li {
 }
 
 .we-work .shadow-text {
-    background: linear-gradient(180deg, #ffffffb9 -28.24%, rgba(0, 53, 105, 0) 90%);
+    background: linear-gradient(180deg, #fffffff4 -28.24%, rgba(0, 53, 105, 0) 125%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
     margin-bottom: 10rem;
 
+}
+
+.we-work .call-to-ac p {
+    font-size: 3rem;
 }
 
 .work-container {
@@ -401,6 +405,15 @@ li {
     text-transform: uppercase;
 }
 
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 0;
+    color: var(--branco);
+    border-top: 1px solid var(--branco);
+    width: 90%;
+}
+
 @media (max-width: 800px) {
     .bg-intro {
         background: url(/assets/img/bg-intro-mobile.webp);
@@ -450,10 +463,15 @@ li {
         width: 90%;
     }
 
+    .we-work .call-to-ac p {
+        font-size: 2rem;
+    }
+
     .contract-grid,
     .we-grid {
         grid-template-columns: 1fr;
     }
+
 
     .contract-content,
     .we-content {
@@ -504,6 +522,82 @@ li {
 
     .work-container {
         margin-bottom: 10rem;
+    }
+
+    .rodape p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .intro-text h2 {
+        font-size: 2.1rem;
+    }
+
+    .card {
+        padding: 2rem 1rem 2rem;
+        width: 100%;
+    }
+
+    .card h3 {
+        font-size: 1.8rem;
+    }
+
+    .call-to-ac p {
+        width: 90%;
+        line-height: 1.2;
+    }
+
+    .contract-content h2,
+    .we-content h2 {
+        font-size: 2.5rem;
+        margin: 0 0 7rem 0;
+    }
+
+    .we-content h2 {
+        width: 80%;
+    }
+
+    .bg-white {
+        border-radius: 70px 0;
+    }
+
+    .contract-content img,
+    .we-content img {
+        width: 80%;
+    }
+
+    .shadow-text {
+        background: linear-gradient(180deg, var(--cor-secundaria) -2%, rgba(0, 53, 105, 0) 150%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .work-content h2 {
+        text-align: center;
+    }
+
+    .pic {
+        padding: 0.5rem 1.8rem;
+    }
+
+    .pic img {
+        top: -50px;
+    }
+
+    .work-card {
+        width: 100%;
+    }
+
+    .rodape {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rodape p {
+        margin: 1rem 0;
     }
 
 }
