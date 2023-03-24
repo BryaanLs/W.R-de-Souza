@@ -42,6 +42,8 @@ li {
     font-size: 1.8rem;
 }
 
+
+
 .container {
     padding: 4rem 1rem;
     height: max-content;
@@ -412,6 +414,37 @@ li {
     color: var(--branco);
     border-top: 1px solid var(--branco);
     width: 90%;
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: .5s;
+}
+
+[data-anime="left"] {
+    transform: translateX(-50px);
+}
+
+[data-anime="right"] {
+    transform: translateX(50px);
+}
+
+[data-anime="top"] {
+    transform: translateY(-50px);
+}
+
+[data-anime="bottom"] {
+    transform: translateY(50px);
+}
+
+[data-anime="drop"] {
+    transform: scale(0%);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: scale(100%);
+    transform: translate3d(0, 0, 0);
 }
 
 @media (max-width: 800px) {
