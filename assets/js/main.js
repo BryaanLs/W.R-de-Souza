@@ -1,6 +1,10 @@
 const target = document.querySelectorAll('[data-anime]');
+const workCard = document.querySelectorAll('.work-card')
+
 function animeScroll() {
     const windowTop = window.innerHeight * 0.5;
+    const windowWidth = window.innerWidth;
+
     target.forEach((e) => {
         if (e.getBoundingClientRect().top - windowTop < 120) {
             e.classList.add('animate')
@@ -8,9 +12,8 @@ function animeScroll() {
             e.classList.remove('animate')
         }
     })
-
 }
-window.addEventListener('scroll', (e) => {
+window.addEventListener('scroll', () => {
     animeScroll();
 })
 

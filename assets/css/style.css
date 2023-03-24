@@ -93,6 +93,7 @@ li {
     display: flex;
     align-items: center;
     padding: 1rem;
+    animation: loadIntro .5s ease-in-out both;
 }
 
 .intro-logo {
@@ -447,6 +448,21 @@ li {
     transform: translate3d(0, 0, 0);
 }
 
+@keyframes loadIntro {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
 @media (max-width: 800px) {
     .bg-intro {
         background: url(/assets/img/bg-intro-mobile.webp);
@@ -544,12 +560,12 @@ li {
     }
 
     .work-card::after {
-        left: 80px;
+        left: 110px;
         top: -30px;
     }
 
     .work-card::before {
-        right: 80px;
+        right: 110px;
         top: -30px;
     }
 
