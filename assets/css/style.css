@@ -17,10 +17,6 @@ html {
     background-color: var(--cor-principal);
 }
 
-body {
-    -webkit-overflow-x: hidden;
-    overflow-x: hidden;
-}
 
 h1,
 h2,
@@ -424,6 +420,8 @@ li {
 [data-anime] {
     opacity: 0;
     transition: .5s;
+    -webkit-overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 [data-anime="left"] {
