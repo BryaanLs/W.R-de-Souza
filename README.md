@@ -13,6 +13,6 @@
 <br>
 
 # DEPLOY DO PROJETO:
-<a href="https://wrdesouza.netlify.app"W.R De Souza</a>
+<a href="https://wrdesouza.netlify.app">W.R De Souza</a>
 
 ![wr-desktop](https://user-images.githubusercontent.com/110504413/227654660-6bb9c974-940e-44cc-b28e-813ece5f67c2.png)
