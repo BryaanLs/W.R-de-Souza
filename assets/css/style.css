@@ -15,6 +15,7 @@
 html {
     font-size: 62.5%;
     background-color: var(--cor-principal);
+    overflow-x: hidden;
 }
 
 h1,
@@ -423,11 +424,12 @@ li {
 }
 
 [data-anime="left"] {
-    transform: translateX(-50px);
+    transform: translate3d(-50px, 0, 0);
+
 }
 
 [data-anime="right"] {
-    transform: translateX(50px);
+    transform: translate3d(50px, 0, 0);
 }
 
 [data-anime="top"] {
@@ -438,13 +440,10 @@ li {
     transform: translateY(50px);
 }
 
-[data-anime="drop"] {
-    transform: scale(0%);
-}
+
 
 [data-anime].animate {
     opacity: 1;
-    transform: scale(100%);
     transform: translate3d(0, 0, 0);
 }
 
