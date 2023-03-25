@@ -2,39 +2,23 @@
     --cor-principal: #0F417C;
     --cor-secundaria: #3DA6FF;
     --branco: #fff;
-    --preto: #000;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 html {
     font-size: 62.5%;
     background-color: var(--cor-principal);
-    -webkit-overflow-x: hidden;
-    overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
 a {
     font-family: 'Inter', sans-serif;
-}
-
-h1 {
-    font-size: 4rem;
-}
-
-
-a {
     text-decoration: none;
 }
-
 
 .container {
     padding: 1rem;
@@ -70,18 +54,7 @@ a {
     width: 90%;
     height: 2px;
     background-color: var(--branco);
-    bottom: 5%;
-}
-
-.links h1 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.links h1 img {
-    width: 90%;
-    height: 90%;
+    bottom: 2%;
 }
 
 .card-item {
@@ -89,7 +62,6 @@ a {
     min-width: 80%;
     display: flex;
     justify-content: center;
-
 }
 
 .card-item a {
@@ -101,7 +73,6 @@ a {
     border-radius: 9px;
     padding: 1rem 12rem 1rem 8rem;
     min-width: 40%;
-    /* padding: 1.5rem; */
     font-size: 2rem;
     color: #051D34;
     transition: .3s ease-in-out;
@@ -161,5 +132,9 @@ a {
     .card-item a {
         padding: 1.5rem;
         min-width: 100%;
+    }
+
+    .links::before {
+        bottom: 8px;
     }
 }
