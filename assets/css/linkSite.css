@@ -125,6 +125,11 @@ a {
 
 
 @media (max-width: 400px) {
+
+    .bg-links {
+        background: url(/assets/img/fundo-links-mobile.webp);
+    }
+
     .card-item {
         width: 95%;
     }
